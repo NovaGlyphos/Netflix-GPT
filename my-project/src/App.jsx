@@ -1,12 +1,7 @@
-
-
-function App() {
-
+import Body from "./components/Body";
+const App = () => {
   return (
-    <div className="text-xl">
-      <h1 className="mt-4 bg-red-500">Hello</h1>
-    </div>
+    <Body/>
   )
 }
-
-export default App
+export default App;
