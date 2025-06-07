@@ -36,6 +36,15 @@ const Login = () => {
 
                     const message = validate(email.current.value,password.current.value,name.current.value);
                     setErrorMessage(message);
+                    if(message === null){
+                        if(!isSignInForm){
+                            //Signup logic
+                        }
+                        else{
+                            //Sign in logic
+                        }
+
+                    }
                 }}>{isSignInForm?"Sign In":"Sign Up"}</button>
                 
                 <h1 className="text-white cursor-pointer" onClick={()=>{
